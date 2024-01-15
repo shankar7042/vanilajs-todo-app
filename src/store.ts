@@ -1,23 +1,7 @@
 import { LOCALSTORAGE_KEY, Store, Todo } from "./types";
 
 const store: Store = {
-  todos: [
-    {
-      id: "1",
-      title: "Task 1",
-      completed: false,
-    },
-    {
-      id: "2",
-      title: "Task 2",
-      completed: false,
-    },
-    {
-      id: "3",
-      title: "Task 3",
-      completed: true,
-    },
-  ],
+  todos: [],
 };
 
 const storeProxy = new Proxy<Store>(store, {
